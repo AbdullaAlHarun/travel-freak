@@ -365,7 +365,6 @@ option {
 }
 
 /*Newsletter Styles*/
-
 .newsletter-container {
   display: flex;
   align-items: center;
@@ -512,6 +511,9 @@ footer p {
     margin: 0 20px;
   }
 
+  .content {
+    margin-top: 18px;
+  }
   .title {
     font-size: 22px;
     padding-top: 32px;
@@ -521,6 +523,7 @@ footer p {
     padding: 8px 15px;
   }
 
+  .popular-heading,
   .heading,
   .name,
   .logo-title,
@@ -529,8 +532,7 @@ footer p {
   }
 
   #chose-us,
-  #popular,
-  form {
+  #popular {
     flex-direction: column;
     margin: 24px 32px;
   }
@@ -540,7 +542,6 @@ footer p {
   button,
   option {
     width: 100%;
-    min-width: 255px;
     padding: 16px;
   }
 
@@ -566,6 +567,7 @@ footer p {
     height: auto;
   }
 
+  form,
   .prefect-place-container,
   .box-container,
   .newsletter-container,
@@ -591,6 +593,10 @@ footer p {
     font-size: 20px;
   }
 
+  #chose-us {
+    margin: 0 20px;
+  }
+
   #review {
     margin-bottom: 30px;
   }
@@ -602,4 +608,9 @@ footer p {
     position: absolute;
     bottom: 48px;
   }
+
+  footer hr {
+    margin: 24px 20px;
+  }
+  
 }
