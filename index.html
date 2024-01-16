@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!--Header Section-->
     <header>
         <nav>
             <div class="logo">
@@ -24,9 +25,104 @@
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-
             <p class="menu"><i class="fa-solid fa-bars"></i></p>
         </nav>
+        <div class="content">
+            <h1 class="title">Explore Your Travel</h1>
+            <p class="title-description">
+                Find Your Perfect Getaway with Our Comprehensive Guides and Insider Tips for 
+                <br> Memorable Adventures Around the Globe.
+            </p>
+            <div class="search-form">
+                <form>
+                    <input type="text" placeholder="Where go">
+                    <select  name="When">
+                        <option value="when">When</option>
+                        <option value="today">Today</option>
+                        <option value="this week">This Week</option>
+                        <option value="this month">This month</option>
+                        <option value="this summer">This Summer</option>
+                    </select>
+                    <select  name="Type">
+                        <option value="type">Type</option>
+                        <option value="today">Solo</option>
+                        <option value="this week">Family</option>
+                        <option value="this month">Luxury</option>
+                    </select>
+                    <button class="form-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Find Now
+                    </button>  
+                </form>
+            </div>
+        </div>
     </header>
+
+    <section id="popular">
+        <div class="popular-left">
+            <h2 class="popular-heading">Our Popular Tours</h2>
+            <p class="popular-description">
+                Embark on a journey of unparalleled adventure with our Exotic Escapes category. Indulge your wanderlust and explore the world's most breathtaking destinations, each carefully curated to deliver a once-in-a-lifetime experience.
+            
+            </p>
+            <div class="description-list">
+                <ul>
+                    <li>Uncover hidden paradises that await your discovery. From the lush rainforests of Costa Rica to the surreal landscapes of Morocco, our Exotic Escapes take you off the beaten path to places where nature's wonders and rich histories converge.</li>
+                    <li>Experience luxury redefined with our handpicked selection of accommodations. Indulge in opulent resorts, boutique hotels, and exclusive retreats that elevate your travel experience to new heights. </li>
+                    <li>For thrill-seekers and adrenaline junkies, our Exotic Escapes offer a plethora of adventurous activities. From snorkeling in the crystalline waters of the Maldives to trekking through the majestic peaks of the Himalayas.</li>
+                </ul>
+            </div>
+            <p class="popular-description">
+                Whether you're a seasoned traveler or a first-time explorer, let us be your passport to extraordinary experiences. Book your dream getaway today and let the adventure begin!
+            </p>
+            <button class="btn-primary">Read More</button>
+        </div>
+        <div class="popular-right">
+            <img src="images/popular.png" alt="popular destination picture">
+        </div>
+    </section>
+
+    <!--Destination Section-->
+    <section id="destination">
+        <h2 class="heading">Choose Your Destination</h2>
+        <p class="description">
+            Our Exotic Escapes are designed for those who seek the epitome of comfort and style while surrounded <br>
+            by the beauty of extraordinary destinations.
+        </p>
+        <div class="images-container">
+            <div class="image-item">
+                <img src="images/maldives.png" alt="Tour destination images">
+                <h4 class="name">Maldives</h4>
+            </div>
+            <div class="image-item">
+                <img src="images/indonesia.png" alt="Tour destination images">
+                <h4 class="name">Indonesia</h4>
+            </div>
+        </div>
+        <div class="images-container2">
+            <div class="image-item">
+                <img src="images/srilanka.png" alt="Tour destination images">
+                <h4 class="name">Srilanka</h4>
+            </div>
+            <div class="image-item">
+                <img src="images/north-america.png" alt="Tour destination images">
+                <h4 class="name">North America</h4>
+            </div>
+            <div class="image-item">
+                <img src="images/kashmir.png" alt="Tour destination images">
+                <h4 class="name">Kashmir</h4>
+            </div>
+        </div>
+        <div class="images-container3">
+            <div class="image-item">
+                <img src="images/bangladesh.png" alt="Tour destination images">
+                <h4 class="name">Bangladesh</h4>
+            </div>
+            <div class="image-item">
+                <img src="images/bandarban.png" alt="Tour destination images">
+                <h4 class="name">Bandarban</h4>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
