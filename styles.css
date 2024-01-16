@@ -6,8 +6,10 @@
 }
 
 /*Common style*/
-section,
 header {
+    margin: 0 135px;
+}
+section{
   margin: 100px 135px 0 135px;
 }
 
@@ -67,7 +69,7 @@ header {
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 nav > ul {
@@ -76,7 +78,7 @@ nav > ul {
 
 nav ul li {
   display: inline-block;
-  margin-right: 44px;
+  margin-left: 44px;
   padding-top: 50px;
 }
 
@@ -201,7 +203,6 @@ option {
 }
 
 /*Destination Section*/
-
 #destination img{
     height: 300px;
     width: 100%;
@@ -229,9 +230,11 @@ option {
     grid-gap: 15px;
     height: 300px;
 }
+
 .image-item {
     position: relative;
 }
+
 .name {
     position: absolute;
     top: 50%;
@@ -267,7 +270,6 @@ option {
     background: rgba(251, 181, 99, 0.05);
 }
 
-
 .items2 {
     width:50%;
     padding: 32px;
@@ -293,6 +295,74 @@ option {
     font-weight: 800;
     padding-top: 32px;
 }
+
+/*Review Section*/
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+}
+
+.box-container .box {
+    background: #eee;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 3rem 2rem;
+    position: relative;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  }
+  
+  #review .heading {
+    margin-bottom: 30px;
+  }
+
+  #review .heading span {
+    color: #ff5400;
+  }
+  
+  .stars i {
+    color: #ff5400;
+    font-size: 2rem;
+  }
+  
+  .fa-star:before {
+    content: "\f005";
+  }
+  
+  .box p {
+    color: #999;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding-top: 2rem;
+  }
+  
+  .box .user {
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+  }
+  
+  .user img {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+  }
+  
+  .user h3 {
+    font-size: 1.2rem;
+    color: #131318;
+  }
+  
+  .box .user span {
+    font-size: 0.8rem;
+    color: #dacfcf;
+  }
 
 /*Newsletter Styles*/
 #newsletter {
@@ -358,6 +428,7 @@ option {
 
 .save-up {
     position: absolute;
+    z-index: 1;
     width: 324px;
     height: 120px;
     transform: rotate(-19.628deg);
@@ -383,15 +454,46 @@ option {
 }
 
 /*footer Section*/
-
 footer {
     background: rgba(19, 19, 24, 0.05);
-    margin-top: 100px;
     text-align: center;
+    position: relative;
 }
 
 footer .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    margin-top: 100px;
+}
+
+.footer-description {
+    color: #5A5A5D;
     text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px 30px 32px;
+}
+
+.social-icons .fa-brands{
+    height: 32px;
+    color: #131318;
+    margin-right: 12px;
+    margin-bottom: 50px;
+}
+
+footer hr {
+    margin: 0 284px 50px 284px;
+    background: rgba(19, 19, 24, 0.10);
+}
+
+footer p {
+    color: #131318;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 110px;
 }
 
 /*Media Queary for small devices*/
@@ -458,6 +560,7 @@ footer .logo {
     width:100%;
   }
   
+ 
   .images-container,
   .images-container2,
   .images-container3
@@ -466,6 +569,7 @@ footer .logo {
     height: auto;
   }
 
+  .box-container,
   .newsletter-container,
   .card-container {
     flex-direction: column;
