@@ -610,7 +610,23 @@ footer p {
   }
 
   footer hr {
-    margin: 24px 20px;
+    margin: 0 20px 24px;
   }
   
+  #review,
+  #chose-us {
+    margin-top: 25px;
+  }
+
+  footer p {
+    padding-bottom: 30px;
+  }
+  footer .logo {
+    padding-top: 30px;
+    margin-top:24px;
+  }
+
+  footer .logo-title {
+    padding-top: 30px;
+  }
 }
